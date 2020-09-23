@@ -23,11 +23,11 @@ public class Main {
             long start = System.currentTimeMillis();
             System.out.println("start...");
             goBlur.oneThreadProcessing(source, result);
-            System.out.println("done by 1 thread in " + ((System.currentTimeMillis() - start) / 1000) + " sec");
+            System.out.println("done by 1 thread in " + (double)((System.currentTimeMillis() - start) / 1000) + " sec");
 
             long newStart = System.currentTimeMillis();
             goBlur.multiThreadProcessing(source, result);
-            System.out.println("done by " + 10 + " threads in " + ((System.currentTimeMillis() - newStart) / 1000) + " sec");
+            System.out.println("done by " + 10 + " threads in " + (double)((System.currentTimeMillis() - newStart) / 1000) + " sec");
         } catch (IOException e) {
             e.printStackTrace();
         }

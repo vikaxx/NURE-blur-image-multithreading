@@ -26,7 +26,7 @@ public class RectangleBlurring {
         return squareLine;
     }
 
-    public void setSquareLine() {
+    private void setSquareLine() {
         this.squareLine = 2 * this.radius + 1;
     }
 
